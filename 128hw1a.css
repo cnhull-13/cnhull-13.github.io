@@ -1,0 +1,168 @@
+/* Casey Hull, February 2024 */
+:root {
+  --color-bg: mistyrose;
+  --color-text-main: #373F51;
+  --purple: #8B5FBF;
+  --turq: #48D1CC;
+  --snow: #FFFAFA;
+  --rose: #FFE4E1;
+  --grey: #373F51;
+  --font-size: 1rem;
+  --wrapper-height: 70vh;
+  --image-max-width: 400px;
+  --image-margin: 3rem;
+  --font-family: Georgia, serif;
+  --font-family-header: Georgia, serif;
+  --padding: 0.5rem;
+}
+
+.buttondiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  background-color: mistyrose;
+  border: solid 0px;
+  border-radius: 1rem;
+  color: var(--grey);
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: inherit;
+  transition: 150ms ease-in-out;
+}
+
+.button:hover{
+  background-color: #FFC8C2;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  background-color: var(--color-bg);
+}
+
+.background{
+  text-align: left;
+  min-width: 400px;
+  max-width: 800px;
+  background-color: snow;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.centered{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  border-radius: 1rem;
+}
+
+
+.grid-photo {
+  display: grid;
+  grid-template-columns: minmax(60px, 30%) 1fr;
+  grid-gap: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding)
+}
+/* Casey Hull, January 2024 
+  grid-template-columns: minmax(60px, 30%) 1fr;
+  creates a grid with two columns.
+  the first column has a minimum of 60px wide, and a maximum of 30% of the container.
+  the second column is set to "1fr" or "1 fraction", aka "split the remaining space into 1 fraction"
+  in short, the second column is "whatever space is left"
+
+*/
+
+
+.grid-photo > div {
+  display: flex;
+  text-align: left;
+  font-size: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.image {
+  min-width: 60px;
+  max-width: 100%;
+  max-height: var(--image-max-width);
+}
+
+h1{
+  text-align: center;
+  color: var(--purple);
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  transition: color 500ms ease-in-out;
+
+}
+
+h2{
+  text-align: center;
+  color: var(--turq);
+  margin: 0.2rem;
+}
+
+h3{
+  text-align: center;
+  color: var(--grey);
+  font-style: italic;
+  margin: 0.5rem;
+}
+
+
+p{
+  color: var(--color-text-main);
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 5%; 
+  padding-right: 5%;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+
+}
+
+dl{
+  margin: 0px;
+}
+
+dd, dt{
+  color: var(--color-text-main);
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 5%; 
+  padding-right: 5%;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+ul, li{
+  margin:0px;
+}
+
+img{
+  transition: all 500ms ease-in-out;
+}
