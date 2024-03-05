@@ -1,0 +1,245 @@
+body, h1, h2, h3, p, img, ul, li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+		background:#eaf8fb;	/* a light blue background color. */
+		font-family:Arial, Helvetica, sans-serif; /* the font family for all text on the web page is now either arial, helvetica or a sans-serif font if those two are not available */
+		font-size:13px; /* all normal text on the web page has a base font size of 14px now */
+	}
+/*the above is a very basic reset rule.  Every browser has a slightly different default for HTML tags.  By using this simple CSS reset, all the more glaring styles 
+		are reset and can now be set to whatever properties that would suit your website best. */
+
+@media screen and (max-width: 600px) {
+  header,header h1, header h2, main, nav, footer, article, ul{
+    float: none;
+    /* top, right, bottom, left*/
+    /* top/bottom, left/right*/
+    padding: 0 3%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav a{
+    text-align: center;
+    width: 100%;
+}
+  main {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;  
+  width: 100%;
+}
+  
+  p, li{
+    padding: 1.5% 0;
+  }
+ 
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}/*END OF >> SMALL << SCREEN*/
+
+@media screen and (min-width: 601px) {
+  
+  header{
+    max-width: 870px;
+  }
+  
+footer, main{
+    max-width: 900px;
+  }
+  
+  
+  
+  main {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  margin: 1rem auto;
+  /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
+}
+
+aside {
+  width: 25%;
+  padding:0 10px;
+
+
+}
+
+.article{
+  width: 75%;
+  padding: 0 0.8rem;
+}
+
+  
+}/*END OF >> LARGE << SCREEN*/
+
+@media (hover: hover){
+  footer :hover{
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse{
+    0%{font-size: 1em;}
+    20%{font-size: 1.2em; color: red}
+    40%{font-size: 1em; color: black}
+    60%{font-size: 1.2em;color: red}
+    80%{font-size: 1em;color: black}
+    100%{font-size: 1em;color: black}
+
+  }
+
+  nav a{
+	margin:0 3px 5px;	/* this code adds a 3px margin to the left and right of the list elements, and 5px to the bottom of the list elements */
+	padding:3px 10px;	/* as the name implies, this adds extra padding around the link, so that the borders don't bump up against the link text */
+  box-sizing: border-box;  
+}
+  aside a {
+  color: #445e64;
+  /* this redefines all links in the left sidebar to this new color, as opposed to the default blue link color */
+}
+  
+  nav a:hover {
+  background-color: #000000;
+  }
+  aside a:hover {
+  text-decoration: none;
+  } /* when hovering over a link, in the sidebar, this turns off the underline */
+  
+  section {
+  padding: 0 0 1.3rem 0; /* adds spacing to the bottom of the list to further divide the content for eaier segragation */
+}
+  
+  section ul{
+    border-bottom: 0.1rem solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
+  }
+  
+  
+}
+
+@media (hover: none){
+  nav a{
+  margin: 0 0.3rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+  section{
+  padding: 1.3rem 0 0 0;
+  border-top: 0.1rem solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
+
+  }
+  aside ul{
+    padding: 0.5rem 0;
+    list-style: none;
+  }
+  aside a {
+  color: #445e64;
+  text-decoration: none;
+  text-align: center;
+  /* this redefines all links in the left sidebar to this new color, as opposed to the default blue link color */
+}
+  
+}
+
+
+
+header{
+  background-color: #333333;
+  color: #ffffff;
+  background-image: url(https://cdn.glitch.global/9ade139d-b327-4e79-97e4-db574dc700be/headerbkgd.png?v=1709172759590);  
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  
+  -webkit-border-bottom-right-radius: .25rem;
+  -webkit-border-bottom-left-radius: .25rem;
+  -moz-border-radius-bottomright: .25rem;
+  -moz-border-radius-bottomleft: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+
+  margin: 0 auto;
+  min-height: 130px;
+  padding: 45px 15px 15px;
+
+}
+
+nav a{
+  background: #4a4a4a;  
+  color: #ffffff;
+  
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  /* these 3 lines of border-radius code make rounded corners work in firefox, safari, chrome, opera and IE9 */
+  
+  border: 1px solid #595959;
+  display: inline-block;
+  text-decoration: none;
+}
+  
+
+footer {
+  background-color: #c4d5d9;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  }
+
+
+	p{
+		letter-spacing:.04em; 
+		line-height:21px;
+	}
+
+nav{
+  display: flex;
+  list-style: none; /* this removes the bullets from list elements */
+  margin-top: 1.3rem; /* giving the ul a top margin of 20px */
+}
+
+section ul{
+  padding: 0 0 0 15px;
+}
+
+section li {
+  margin-bottom: 10px;
+}
+section li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+
+
+.float-left {
+  float: left;
+  /* use this on an element (like an image) to make it float to the left of it's containing HTML element */
+  margin: 0 1em 1em 0;
+}
+.float-right {
+  float: right;
+  /* use this on an element (like an image) to make it float to the right of it's containing HTML element */
+}
+.float-right img {
+  margin: 0 0 1em 1em;
+  /* use this on an element (like an image) to make it float to the right of it's containing HTML element */
+}
+.clear {
+  clear: both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
+}
