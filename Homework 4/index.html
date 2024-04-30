@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      HTML comment
+    -->
+    <link rel="manifest" href="manifest.json" >
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon.svg?v=1714346114640" >
+
+    <title>Hello World!</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css" >
+
+    <!-- The website JavaScript file -->
+    <script src="script.js" defer></script>
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+  </head>
+  <body id="body">
+    <header>
+      <h1>Homework 4</h1>
+    </header>
+    <main>
+      <h1>
+        Hello, <span id="insertName">BOOGITY</span>!
+      </h1>
+      <a href = "indexcopy.html">Test link for a different page</a><br>
+        <h3><label for="userName">Please enter your name:</label></h3>
+        <input type="text" name="userName" id="userName" onclick="activate()">
+      <h3>
+        <label for="bg-colors">Select a background color:</label>
+      </h3>
+
+      <select name="bg-colors" id="bg-colors">
+        <option value="blue-bg">Light Blue</option>
+        <option value="gold-bg">Light Gold</option>
+      </select>
+      <button
+        onclick="changeBackground(document.getElementById('bg-colors').value)">
+        go
+      </button>
+      <p>
+        Progressive Web Apps have a variety of benefits and features, including, but not limited to:
+      </p>
+        <ul>
+        <li>No platform specific development tools required: you can develop a PWA with standard web development tools</li>
+        <li> 
+          PWAs can be installed straight from a webpage--no stores required!
+          </li>
+          <li> 
+          Installed PWAs work very much like any other kind of app, and can even be used offline (if the developers have provided support for that)
+          </li>
+          <li>
+            PWAs can continue to run in the background, pulling and pushing information, and displaying notifications
+          </li>
+          <li> PWAs are a great midpoint between a website and a true application, providing many benefits of both!</li>
+          
+        </ul>
+      
+
+    </main>
+  </body>
+</html>

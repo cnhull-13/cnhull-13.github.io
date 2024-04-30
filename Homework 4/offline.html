@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="manifest" href="manifest.json" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon.svg?v=1714346114640" />
+
+    <title>Hello World!</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+  </head>
+  <body id="body">
+    <header>
+      <h1>Offline</h1>
+    </header>
+    <main>
+      <h1>Not connected to the internet</h1>
+      <a href = "/index.html"> Main page</a><br>
+      <a href = "/indexcopy.html"> Test page</a><br>
+    </main>
+  </body>
+</html>

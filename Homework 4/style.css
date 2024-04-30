@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander');
+
+:root {
+  --color-bg: ghostwhite;
+  --color-title: pink;
+  --color-1: lavender;
+  --color-1-accent: mediumpurple;
+  --color-2: lavenderblush;
+  --color-2-accent: mistyrose;
+  --color-3: aliceblue;
+  --color-4: paleturquoise;
+  --color-5: lightskyblue;
+  
+  --red: lightcoral;
+  --orange: lightsalmon;
+  --yellow: #fcf5a4;
+  --green: lightgreen;
+  --turq: lightseagreen;
+  --blue: lightskyblue;
+  --darkblue: royalblue;
+  --purple: #c5b2eb;
+  
+  
+  --default: 1rem;
+  --small: 0.25rem;
+  --large: 2rem;
+}
+
+
+
+.red{background-color: var(--red)}
+.orange{background-color: var(--orange)}
+.yellow{background-color: var(--yellow)}
+.green{background-color: var(--green)}
+.turq{background-color: var(--turq)}
+.blue{background-color: var(--blue)}
+.darkblue{background-color: var(--darkblue)}
+.purple{background-color: var(--purple)}
+
+.redText{color: var(--red)}
+.orangeText{color: var(--orange)}
+.yellowText{color: var(--yellow)}
+.greenText{color: var(--green)}
+.turqText{color: var(--turq)}
+.blueText{color: var(--blue)}
+.darkblueText{color: var(--darkblue)}
+.purpleText{color: var(--purple)}
+
+html {
+  box-sizing: border-box; 
+  font-size: 16px;
+}
+
+
+
+
+
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.white-bg{
+  background: white;
+}
+
+.blue-bg{
+  background: var(--blue);
+  background-image: url("lightblue.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.gold-bg{
+  background: var(--yellow);
+  background-image: url("lightgold.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6,h7{font-family: "Grandstander", sans-serif;}
+
+header{
+  background-color: pink;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  
+  -webkit-border-bottom-right-radius: var(--small);
+  -webkit-border-bottom-left-radius: var(--small);
+  -moz-border-radius-bottomright: var(--small);
+  -moz-border-radius-bottomleft: var(--small);
+  border-bottom-right-radius: var(--small);
+  border-bottom-left-radius: var(--small);
+  margin: 0 auto;
+  min-height: 130px;
+  padding-top: 45px;
+}
+
+
+header h1{
+  margin: 0 var(--large);
+  padding: 0 var(--large);
+}
+
+main{
+  min-width: 250px;
+  background-color: rgb(240, 240, 240, 95%);
+  margin: var(--large);
+  padding: var(--large);
+  border-radius: var(--default);
+}
+
+select{
+  margin: var(--default);
+    margin-left: var(--large);
+    padding: var(--small);
+}
+
+button{
+  padding: var(--small);
+}
+
+
+p, input, textarea{
+  box-sizing: border-box;
+  width: 50%;
+  border: none;
+  margin: var(--default);
+  padding: var(--default);
+  border-radius: var(--default);
+}
+
+.indent{
+  margin: var(--default);
+  padding: var(--default);
+}

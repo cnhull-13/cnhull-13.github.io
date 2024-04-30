@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="manifest" href="manifest.json">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon.svg?v=1714346114640">
+    <title>Hello World!</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- The website JavaScript file -->
+    <script src="script.js" defer></script>
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+  </head>
+  <body id="body">
+    <header>
+      <h1>Page 2</h1>
+    </header>
+    <main>
+      <h1>Page 2 main</h1>
+      <a href = "index.html"> Main page</a><br>
+
+      <label for="bg-colors">Select a background color:</label>
+
+      <select name="bg-colors" id="bg-colors">
+        <option value="blue-bg">Light Blue</option>
+        <option value="gold-bg">Light Gold</option>
+      </select>
+      <button
+        onclick="changeBackground(document.getElementById('bg-colors').value)">
+        go
+      </button>
+      
+      
+      <h3>Adding 'A' and 'B'</h3>
+      <form onsubmit="return false;">
+        <label for="a" class = "indent">A:</label>
+        <input type="number" name="a" id="a" >
+        <br>
+        <label for="b" class = "indent">B:</label>
+        <input type="number" name="b" id="b" >
+        <br>
+        <button
+          onclick="add(document.getElementById('a').value,document.getElementById('b').value)">
+          Add
+        </button>
+      </form>
+
+    </main>
+
+  </body>
+</html>
