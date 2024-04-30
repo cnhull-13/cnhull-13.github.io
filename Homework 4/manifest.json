@@ -1,7 +1,7 @@
 {
   "name": "Homework 4",
   "short_name": "HW4",
-  "start_url": "https://verbose-enchanting-credit.glitch.me/",
+  "start_url": "https://cnhull-13.github.io/Homework%204/index.html",
   "display": "standalone",
   "description": "CSM Spring 2024 128 Web/Mbl: Homework 4",
   "lang": "en",
@@ -11,19 +11,19 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon1024.png?v=1714347805500",
+      "src": "icon1024.png",
       "sizes": "44x44 50x50 150x150 72x72 96x96 128x128 192x192 256x256 512x512 1024x1024",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon1024.png?v=1714347805500",
+      "src": "icon1024.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon.svg?v=1714346114640",
+      "src": "icon1024.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
@@ -31,7 +31,7 @@
   ],
   "screenshots": [
     {
-      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+      "src": "Screenshot.png",
       "sizes": "2880x1800",
       "type": "image/png",
       "description": "A screenshot of the home page"
@@ -40,7 +40,7 @@
   "prefer_related_applications": false,
   "shortcuts": [
     {
-      "src": "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon.svg?v=1714346114640",
+      "src": "icon.svg",
       "name": "The name you would like to be displayed for your shortcut",
       "url": "The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
       "description": "A description of the functionality of this shortcut"

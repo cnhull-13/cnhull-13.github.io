@@ -7,10 +7,10 @@ const toCache = [
   "script.js",
   "/manifest.json",
   "/offline.html",
-  "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/lightgold.jpg?v=1714276860246",
-  "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/lightblue.jpg?v=1714276861251",
-  "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon.svg?v=1714346114640",
-  "https://cdn.glitch.global/07ed32f0-6a89-4516-a3dc-31759babb276/icon1024.png?v=1714347805500",
+  "lightgold.jpg",
+  "lightblue.jpg",
+  "icon.svg",
+  "icon1024.png",
 ]
 
 self.addEventListener("install", (e) => {
