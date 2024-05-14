@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander');
+
+
+:root {
+  --color-bg: ghostwhite;
+  --color-title: pink;
+  --color-1: lavender;
+  --color-1-accent: mediumpurple;
+  --color-2: lavenderblush;
+  --color-2-accent: mistyrose;
+  --color-3: aliceblue;
+  --color-4: paleturquoise;
+  --color-5: lightskyblue;
+  
+  --red: lightcoral;
+  --orange: lightsalmon;
+  --yellow: #fcf5a4;
+  --green: lightgreen;
+  --turq: lightseagreen;
+  --blue: lightskyblue;
+  --darkblue: royalblue;
+  --purple: #c5b2eb;
+  
+  
+  --default: 1rem;
+  --small: 0.25rem;
+  --large: 2rem;
+}
+
+
+.red{background-color: var(--red)}
+.orange{background-color: var(--orange)}
+.yellow{background-color: var(--yellow)}
+.green{background-color: var(--green)}
+.turq{background-color: var(--turq)}
+.blue{background-color: var(--blue)}
+.darkblue{background-color: var(--darkblue)}
+.purple{background-color: var(--purple)}
+
+.redText{color: var(--red)}
+.orangeText{color: var(--orange)}
+.yellowText{color: var(--yellow)}
+.greenText{color: var(--green)}
+.turqText{color: var(--turq)}
+.blueText{color: var(--blue)}
+.darkblueText{color: var(--darkblue)}
+.purpleText{color: var(--purple)}
+
+html {
+  box-sizing: border-box; 
+  font-size: 16px;
+
+}
+
+
+.grandstander-<uniquifier> {
+  font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.trans{
+    color: rgba(240, 240, 240, 0);
+}
+
+.mar{
+  color: rgba(240, 240, 240, 0);
+  min-height: 3rem;
+  margin: 0px;
+  padding: 1rem;
+}
+
+
+
+.cordova{
+  min-height: 2rem;
+  max-width: 100%;
+  background-image: url("cordova-crop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+.cordova-bg{
+  min-height: 2rem;
+  max-width: 100%;
+  background-image: url(cordova-10p.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center bottom;
+  padding-bottom: 2rem;
+}
+
+.reactNative{
+  min-height: 2rem;
+  max-width: 100%;
+  background-image: url(react-native-crop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.reactNative-bg{
+  min-height: 2rem;
+  max-width: 100%;
+  background-image: url(react-native-10p.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center bottom;
+    padding-bottom: 2rem;
+
+}
+
+.flutter{
+  min-height: 2rem;
+  max-width: 100%;
+  background-image:url(Flutter-crop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.flutter-bg{
+  min-height: 2rem;
+  max-width: 100%;
+  background-image: url(Flutter-10p.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center bottom;
+    padding-bottom: 2rem;
+
+}
+
+h1, h2, h3, h4, h5, h6,h7{font-family: "Grandstander", sans-serif;}
+
+h4{
+  margin: auto;
+  padding: auto;
+}
+
+button h2{
+  margin: 0px;
+}
+
+.clear{
+  margin: 0px;
+  padding: 0px;
+}
+
+.sticky-top{ padding : 0px;}
+
+
+header {
+  background-color: rgba(240, 240, 240, .9);
+  width: 100%;
+  max-width: 800px;
+  margin: 0px;
+  border-bottom-right-radius: var(--default);
+  border-bottom-left-radius: var(--default);
+
+
+}
+
+header h1{
+  margin: 0px;
+  padding: 2rem;
+}
+
+
+main{
+  min-width: 250px;
+  max-width: 800px;
+  background-color: rgb(240, 240, 240, 95%);
+  margin: var(--large);
+  padding: var(--large);
+  border-radius: var(--default);
+}
+
+
+p{
+  
+  margin: 0.25rem;
+  margin-top: 0px;
+  padding: 0.25rem;
+  line-height: 1.7
+}
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  width: 100%;
+  padding: var(--default);
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+}
+
+.active, .accordion:hover {
+ filter: saturate(120%);
+  filter: brightness(115%);
+}
+
+/* hidden by default */
+.panel {
+  padding: var(--default);
+  background-color: rgba(220, 220, 220, .3);
+  display: none;
+  overflow: hidden;
+  transition: 0.2s;
+} 
+

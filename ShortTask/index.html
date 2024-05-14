@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- validated; trailing slashes. -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Short Task</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" >
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Short Task</h1>
+    </header>
+
+    <main>
+      <h1>Short Task</h1>
+
+      <button class="accordion red cordova trans">
+        Cordova
+      </button>
+
+      <div class="panel">
+        <h4>Cordova</h4>
+        <ul>
+          <li>Created in ~2009</li>
+          <li>Formerly known as PhoneGap</li>
+          <li>
+            Originally created by Nitobi; Adobe later bought the studio and
+            released the code to the Apache Software Foundation
+          </li>
+          <li>
+            In a nutshell, bundles up web applications into a mobile-usable
+            form. While not the most efficient, this means basic web development
+            experience is enough to put something together, and the same
+            application can be used across multiple platforms.
+          </li>
+        </ul>
+      </div>
+
+      <button class="accordion orange reactNative trans">
+        React Native
+      </button>
+      <div class="panel">
+        <h4>React Native</h4>
+        <ul>
+          <li>Created by Facebook (now Meta) in ~2015</li>
+          <li>Supports JavaScript, Java, C++, Python</li>
+          <li>
+            A near-native experience; as best I understand, React Native uses
+            JavaScript to implement Native elements.
+          </li>
+
+          <li>fairly easy to get running</li>
+          <li>
+            installation requires node.js, but plenty of other things also
+            require node.js, so that's not a huge ask
+          </li>
+          <li>
+            the lecture guide was in unix, which isn't my preferred way of doing
+            things
+          </li>
+          <li>
+            unable to open link from windows to iphone. it just says there's no
+            data to be read, or just acts like a prompt to search
+          </li>
+        </ul>
+      </div>
+
+      <button class="accordion flutter yellow trans">
+        Flutter
+      </button>
+      <div class="panel">
+        <h4>Flutter</h4>
+
+        <ul>
+          <li>Created by Google in 2017</li>
+          <li>
+            Supports C, C++, and Dart, a language also developed by Google
+          </li>
+          <li>Supposed strengths include</li>
+        </ul>
+      </div>
+
+      <button class="accordion green">Primary Languages</button>
+      <div class="panel">
+        <div class="row">
+          <div class="col-sm-4 cordova-bg">
+            <h2 class="mar cordova">Cordova</h2>
+            <p>
+              Cordova primarily works in JavaScript, HTML, and CSS, making it an
+              easy transition for people who already have some web development
+              experience.
+            </p>
+          </div>
+          <div class="col-sm-4 reactNative-bg">
+            <h2 class="mar reactNative">ReactNative</h2>
+            <p>
+              React Native also works mostly in JavaScript, giving it many of
+              the same benefits as Cordova. However, it does not use HTML and
+              CSS to handle its layout.
+            </p>
+          </div>
+          <div class="col-sm-4 flutter-bg">
+            <h2 class="mar flutter">Flutter</h2>
+            <p>
+              Flutter, developed by Google, uses a language called Dart, also
+              developed by Google. It uses a system of "widgets" to create
+              applications.
+            </p>
+          </div>
+        </div>
+        <!--end of row -->
+      </div>
+
+      <button class="accordion blue">Additional libraries and plugins</button>
+      <div class="panel">
+        <div class="row">
+          <div class="col-sm-4 cordova-bg">
+            <h2 class="mar cordova">Cordova</h2>
+            <p>
+              Because Cordova works primarily in JavaScript, it also has access
+              to JavaScript's large library of third-party plugins and other
+              add-ons.
+            </p>
+          </div>
+          <div class="col-sm-4 reactNative-bg">
+            <h2 class="mar reactNative">ReactNative</h2>
+            <p>
+              Just like Cordova, React Native also has access to JavaScript's
+              large library of third-party plugins and other add-ons.
+            </p>
+          </div>
+          <div class="col-sm-4 flutter-bg">
+            <h2 class="mar flutter">Flutter</h2>
+            <p>
+              Flutter's library is more limited, with most add-ons coming
+              directly from Google
+            </p>
+          </div>
+        </div>
+        <!--end of row -->
+      </div>
+
+      <button class="accordion purple">Performance</button>
+      <div class="panel">
+        <div class="row">
+          <div class="col-sm-4 cordova-bg">
+            <h2 class="mar cordova">Cordova</h2>
+            <p>
+              Because Cordova effectively packages a web app in a mobile
+              wrapper, Cordova's performance may suffer with large, complicated
+              applications. Most applications won't be affected.
+            </p>
+          </div>
+          <div class="col-sm-4 reactNative-bg">
+            <h2 class="mar reactNative">ReactNative</h2>
+            <p>
+              React Native has fairly high performance, outpacing Cordova, but
+              falling short of Flutter's. Again, the difference won't be
+              apparent on most applications.
+            </p>
+          </div>
+          <div class="col-sm-4 flutter-bg">
+            <h2 class="mar flutter">Flutter</h2>
+            <p>
+              Flutter supposedly peforms the closest to a fully native app, and
+              is better able to handle large, complex apps that Cordova and
+              React Native may struggle with.
+            </p>
+          </div>
+        </div>
+        <!--end of row -->
+      </div>
+
+      
+
+      <button class="accordion orange">Quick-start difficulty: Summary</button>
+      <div class="panel">
+        <div class="row">
+          <div class="col-sm-4 cordova-bg">
+            <h2 class="mar cordova">Cordova</h2>
+            <p>
+              Fairly quick: under an hour from installation to first page launch.
+            </p>
+          </div>
+          <div class="col-sm-4 reactNative-bg">
+            <h2 class="mar reactNative">ReactNative</h2>
+            <p>
+              Fairly quick: under an hour from installation to first page launch.
+
+            </p>
+          </div>
+          <div class="col-sm-4 flutter-bg">
+            <h2 class="mar flutter">Flutter</h2>
+            <p>
+                Failed. Unable to get a page to launch after ~8hours. 
+            </p>
+          </div>
+        </div>
+        <!--end of row -->
+      </div>
+
+      <button class="accordion yellow">Quick-start attempt: Cordova</button>
+      <div class="panel">
+      <ul>
+        <li>Pretty straightforward
+        </li>
+        <li>I was able to get a web page open in under 30 minutes, which isn't that bad.
+        </li>
+        <li>Installation in command line; fairly small. Needs node.js.
+        </li>
+        <li>A bit of confusion surrounding platforms, and whether or not you need to include all of them</li>
+        </ul>
+      </div>
+      <button class="accordion green">Quick-start attempt: React Native</button>
+      <div class="panel">
+        <ul>
+          <li>Fairly easy to get running</li>
+          <li>
+            Installation requires node.js, but plenty of other things also
+            require node.js, so that's not a huge ask
+          </li>
+          <li>Able to open a page in under 30 minutes</li>
+          <li>
+            unable to open link from windows to iphone. it just says there's no
+            data to be read, or just acts like a prompt to search. Convenient in theory, but not in practice.
+          </li>
+        </ul>
+      </div>
+
+      <button class="accordion blue">Quick-start attempt: Flutter</button>
+      <div class="panel">
+        <ul>
+                  <li>setup process is long and complicated</li>
+          <li>requires several different programs</li>
+          <li>
+            also requires a large amount of disk space; the installation said
+            500MB-2GB, but ended up filling up the rest of my disk
+          </li>
+          <li>
+            This process is taking way too fucking long and is causing too many
+            headaches
+          </li>
+          <li>
+            finally at the point where something is runnable; it looks like
+            vscode, but is not vscode? I thought I was installing flutter as an
+            <em> extension</em> for vscode?
+          </li>
+          <li>
+            I am being offered an array of desserts and I do not know what this
+            means
+          </li>
+          <li>
+            vanilla ice cream, upside down cake, tiramisu, pie, oreo, nougat,
+            jellybean, kitkat, marshmallow, lollipop, ice cream sandwich...
+          </li>
+          <li>
+            I'm still following the installation and setup guide. How am I
+            supposed to know what any of these are or what they do?
+          </li>
+          <li>
+            I picked what I thought was the default and finished "creating" a
+            new virtual device. It gave me an error and did not create the
+            device.
+          </li>
+          <li>
+            I'm just going to keep going and hope it doesn't screw things up.
+          </li>
+          <li>Summarizing: I gave up. I spent some 8hrs troubleshooting, uninstalling and reinstalling several times, and cleaning up my C drive when it turned out that they had lied about how much space the Android Studio/SDK would take up (it was ~10+GB, they said 500MB during installation)</li>
+          <li> When I was finally able to get Android Studio Running, nothing would run. The emulator alone made my computer nigh unusable.</li>
+          <li> Their guide didn't provide any information on how to use Flutter without Android Studio, so I threw in the towel.</li>
+        </ul>
+        </div>
+    </main>
+  </body>
+</html>
