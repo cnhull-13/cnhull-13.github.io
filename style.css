@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander');
+
+
+:root {
+  --color-bg: ghostwhite;
+  --color-title: pink;
+  --color-1: lavender;
+  --color-1-accent: mediumpurple;
+  --color-2: lavenderblush;
+  --color-2-accent: mistyrose;
+  --color-3: aliceblue;
+  --color-4: paleturquoise;
+  --color-5: lightskyblue;
+  
+  --red: lightcoral;
+  --orange: lightsalmon;
+  --yellow: #fcf5a4;
+  --green: lightgreen;
+  --turq: lightseagreen;
+  --blue: lightskyblue;
+  --darkblue: royalblue;
+  --purple: #c5b2eb;
+  
+  
+  --default: 1rem;
+  --small: 0.25rem;
+  --large: 2rem;
+}
+
+
+
+.red{background-color: var(--red)}
+.orange{background-color: var(--orange)}
+.yellow{background-color: var(--yellow)}
+.green{background-color: var(--green)}
+.turq{background-color: var(--turq)}
+.blue{background-color: var(--blue)}
+.darkblue{background-color: var(--darkblue)}
+.purple{background-color: var(--purple)}
+
+.redText{color: var(--red)}
+.orangeText{color: var(--orange)}
+.yellowText{color: var(--yellow)}
+.greenText{color: var(--green)}
+.turqText{color: var(--turq)}
+.blueText{color: var(--blue)}
+.darkblueText{color: var(--darkblue)}
+.purpleText{color: var(--purple)}
+
+html {
+  box-sizing: border-box; 
+  font-size: 16px;
+
+}
+
+
+.grandstander-<uniquifier> {
+  font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* background: ghostwhite;
+
+brick/market https://cdn.glitch.global/3d4b3a99-6021-4e67-862c-c6f79c85dcc6/marketbg.png?v=1712968051046
+grass  background-image: url("https://cdn.glitch.global/3d4b3a99-6021-4e67-862c-c6f79c85dcc6/grassSmall.png?v=1712963677412");
+sky https://cdn.glitch.global/3d4b3a99-6021-4e67-862c-c6f79c85dcc6/sky.png?v=1712968052679
+*/
+body {
+  background-image: url("background.png"), url("https://cdn.glitch.global/3d4b3a99-6021-4e67-862c-c6f79c85dcc6/sky.png?v=1712968052679");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.clear{
+  margin: 0px;
+  padding: 0px;
+}
+
+.sticky-top{ padding : 0px;}
+
+
+header {
+  max-width: 100%;
+}
+
+nav{
+  max-width: 100%;
+}
+
+nav a{
+  margin: var(--small);
+  padding: var(--small);
+  border-radius: var(--default);
+  text-align: center;
+}
+
+.navbar{
+  font-family: "Grandstander", sans-serif;
+  font-size: 1.25rem;
+
+}
+
+.navbar-brand{
+  font-size: 2rem;
+  font-family: "Grandstander", sans-serif;
+  font-weight: bold;
+}
+
+.active{
+    filter: drop-shadow(5px 5px 2px gray);
+}
+
+nav a:hover{
+  font-weight: bold;
+}
+
+main{
+  min-width: 250px;
+  background-color: rgb(240, 240, 240, 95%);
+  margin: var(--large);
+  padding: var(--large);
+  border-radius: var(--default);
+
+}
+
+h1, h2, h3, h4, h5, h6,h7{font-family: "Grandstander", sans-serif;}
+
+p, input, textarea{
+  width: 100%;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: var(--default);
+}
+
+p{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  line-height: 1.7
+}
+
+
+blockquote{
+  margin: 0rem 1rem;
+  margin-bottom: 1rem;
+  padding: 0rem 1rem;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  background-color: rgba(220, 220, 220, .3);
+  border: none;
+  margin: 0.5rem;
+}
+
+.card-header{
+  background-color: rgba(255, 255, 255, .5);
+  border: none;
+  border-radius: var(--default)
+}
+
+
+.thumbnail{
+  background-color: rgba(255, 255, 255, .5);
+  margin-bottom: var(--default);
+  padding: 0.5rem;
+  border-radius: var(--default)
+}
+
+.thumbnail img{
+  max-height: max-content;
+}
+
+.caption{
+  padding: var(--default);
+  margin: auto;
+}
+
+.caption h3{
+  text-align: center;
+}
+
+.caption p{
+  max-height: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body .caption a{
+  display: block;
+  margin: var(--small);
+}
+
+.btn-primary{
+  border: none;
+  background-color: var(--blue);
+}
+
+.btn-full{
+  width: 100%;
+}
+
+.nopad{
+  padding: 0px;
+}
+
+.notfull{
+  width: 98%;
+}
+
+
+label{
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+textarea{
+  height: 30vh;
+}
+
+.socials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, .5);
+  border: none;
+  border-radius: var(--default);
+    margin-bottom: 1rem;
+
+}
+
+.icon{
+  display: inline-block;
+  padding: auto;
+  margin: 0.5rem;
+  font-size: 3rem;
+}
+
+
+#map{
+  height: 60vh;
+}
+
