@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- validated; trailing slashes. -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>ABC Toys</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="container-fluid sticky-top">
+      <nav
+        class="navbar navbar-expand-sm navbar-fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ABC Toys</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#links"
+            aria-controls="links"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse row" id="links">
+            <div class="navbar-nav">
+              <a class="nav-link red text-dark" href="index.html">Home</a>
+              <a class="nav-link orange text-dark" href="contact.html">
+                Contact
+              </a>
+              <a class="nav-link yellow text-dark" href="products.html">
+                Products
+              </a>
+              <a class="nav-link green text-dark" href="location.html">
+                Location
+              </a>
+              <a
+                class="nav-link blue text-dark active"
+                aria-current="page"
+                href="extra.html">
+                Extra
+              </a>
+              <a
+                class="nav-link disabled purple"
+                tabindex="-1"
+                aria-disabled="true">
+                ♪
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- this is the start of content -->
+    <main>
+      <h1>Extra</h1>
+      <p>
+        In their own words, WURFL.js is JavaScript that detects device models of
+        smartphones, tablets, smart TVs and game consoles accessing your
+        website.
+        <br />
+        Here are a few of its capabilites:
+      </p>
+      <ul>
+        <li>
+          physical_screen_height will retrieve the screen height in millimeters.
+        </li>
+        <li>
+          Similar, though not interchangeable, resolution_height will retrieve
+          the screen height expressed in physical pixels
+        </li>
+        <li>
+          is_smarttv can identify if the device is a SmartTV. Always something
+          important to consider in case
+          <a
+            href="https://www.buzzfeednews.com/article/stephaniemcneal/dorothy-fridge-tweets">
+            a teenage girl has her electronics confiscated.
+          </a>
+        </li>
+        <li>
+          There's also is_robot, which identifies if the accessor is a bot--a
+          "robot, crawler or other programmable agent that stalks the web."
+          Perfect for when the Turing Test fails you!
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
