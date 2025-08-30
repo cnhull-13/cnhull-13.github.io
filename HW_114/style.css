@@ -1,0 +1,121 @@
+/* Casey Hull, August 2025 */
+:root {
+  --color-bg: mistyrose;
+  --color-text-main: black;
+  --font-size: 1rem;
+  --padding: 0.2rem;
+}
+
+a{
+  text-decoration: none;
+  color: mediumturquoise;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.row{
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.container{
+  width: 100%;
+  min-width: 400px;
+  max-width: 1000px;
+  box-sizing: border-box;
+  background-color: snow;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padded{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.transparent{
+  background-color: rgba(250, 210, 210, .6);
+}
+
+main{
+  width: 100%;
+  min-width: 400px;
+  max-width: 1000px;
+  background-color: snow;
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+
+}
+
+.mainTitle {
+  color: mediumpurple;
+}
+
+
+.subtitle{
+  
+}
+
+.filler{
+  font-style: italic;
+}
+
+
+.image {
+  min-width: 60px;
+  max-width: 100%;
+  max-height: var(--image-max-width);
+}
+
+h1,h2,h3{
+  margin: 0rem;
+}
+
+h1{
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+}
+
+h2, h3{
+  margin: 0.2rem;
+}
+
+h3{
+  font-weight: lighter;
+}
+
+p{
+  margin: 0.05rem;
+}
+
