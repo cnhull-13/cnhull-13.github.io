@@ -1,0 +1,199 @@
+/* Casey Hull, August 2025 */
+:root {
+  --bg-color: mistyrose;
+  --container-bg:  rgba(255, 250, 250, 1);
+  --color-text-main: black;
+  --bg-color-accent: rgba(250, 210, 210, .6);
+  --link-color: rgb(0, 177, 171);;
+  --font-size: 1rem;
+  --padding: 0.2rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--link-color)
+}
+html{
+  height:90%;
+  font-family: Helvetica, sans-serif;
+
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+main{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-width: 400px;
+  max-width: 1000px;
+  background-color: --container-bg;
+  font-size: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+table, th, td {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+tr{
+  height: 2rem;
+}
+
+
+
+.visible{
+  visibility: hidden;
+}
+
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.row{
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+.right{
+  justify-content:end;
+}
+
+.container{
+  width: 100%;
+  min-width: 400px;
+  max-width: 1000px;
+  box-sizing: border-box;
+  background-color: snow;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padded{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.transparent{
+  background-color: rgba(250, 210, 210, .6);
+}
+
+.mainTitle {
+  color: mediumpurple;
+}
+
+.filler{
+  font-style: italic;
+}
+
+
+h1,h2,h3{
+  margin: 0rem;
+}
+
+h1{
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+}
+
+h2, h3, h4{
+  margin: 0.2rem;
+}
+
+h4{
+  font-weight: lighter;
+  font-style: italic;
+}
+
+h3{
+  font-weight: lighter;
+}
+
+p{
+  margin: 0.05rem;
+  line-height: 1.5rem;
+}
+
+input{
+  width: 50%;
+  max-width: 30rem;
+  min-width: 1rem;
+}
+
+input:focus{
+   outline: none;
+   outline-color: rgba(250, 210, 210, 1);
+   box-shadow: 0 0 0.5rem  rgba(250, 210, 210, 1);
+    border-color: rgba(250, 210, 210, 1);
+}
+
+textarea{
+  text-wrap: wrap;
+}
+
+.currency{
+  width: 100%;
+  height: 2.5rem;
+  align-content: center;
+  text-align: end;
+}
+
+.math{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+input, textarea{
+  box-sizing: border-box;
+  resize: none;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgba(250, 210, 210, .6);
+  color: var(--color-text-main);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+button{
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgba(250, 210, 210, .6);
+}
+

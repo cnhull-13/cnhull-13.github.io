@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      this is a comment in HTML 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Casey Hull's submission for Homework 2 in CSM CIS 114, a class on JavaScript and Ajax">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ajax">
+    <meta name="author" content="Casey Hull">
+
+    <title>Homework 2B</title>
+
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/f0308f51-6e6b-457f-ad70-5b683806b4a1/beeTiny.png?v=1706572074380">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/scripts/hw2.js" defer></script>
+
+  </head>
+  <!-- closing head -->
+
+  <body>
+    <header class="container center">
+        <h1 class="mainTitle">Hello World!</h1>
+        <a href = "/index.html"><h2>Main Directory</h2></a>
+    </header>
+
+    <main class="container center">
+        <h2 class="title">Homework 2</h2>
+        <h4>Extra Credit</h4>
+        
+        <table>
+            <th>Currency</th>
+            <th>Exchange Rate</th>
+            <th>Value</th>
+            <tr>
+                <td>Euro</td>
+                <td>0.92</td>
+                <td><div class="row right"><textarea id="eur" class="currency" disabled></textarea></div></td>
+            </tr>
+            <tr>
+                <td>Canadian Dollar</td>
+                <td>1.38</td>
+                <td><div class="row right"><textarea id="cad" class="currency" disabled></textarea></div></td>
+
+            </tr>
+            <tr>
+                <td>Hong Kong Dollar</td>
+                <td>7.81</td>
+                <td><div class="row right"><textarea id="hkd" class="currency" disabled></textarea></div></td>
+            </tr>
+            <tr>
+                <td>Japanese Yen</td>
+                <td>156.73</td>
+                <td><div class="row right"><textarea id="jpy" class="currency" disabled></textarea></div></td>
+            </tr>
+            <tr>
+                <td>Mexican Peso</td>
+                <td>18.41</td>
+                <td><div class="row right"><textarea id="mxn" class="currency" disabled></textarea></div></td>
+            </tr>
+            <tr>
+                <td colspan="2">Enter an amount in USD to convert</td>
+                <td><div class="row right"><input id="usd" class="currency" type="number" placeholder="Enter a number"></textarea></div></td>
+            </tr>
+        </table>
+        <div class="row">
+        <button onclick="exchange()">Submit</button>
+        <button onclick="clearCurrency()">Clear</button>
+
+        </div>
+        <textarea id="exchError" class="visible">Please enter a number</textarea>
+
+        <a href = "/hw2.html"><h4>Return to Homework 2</h4></a>
+
+    </main>
+
+    <footer class="container center transparent">
+          <p>Casey Hull</p>
+          <p>2025</p>
+          <a href = "/index.html">Main Directory</a>
+      </footer>
+  </body>
+  <!-- closing body -->
+</html>
+<!-- closing HTML file. that's all for now, folks! -->
