@@ -42,6 +42,7 @@ function clearGrades(){
     document.getElementById("midterm").value = ""
     document.getElementById("final").value = ""
     document.getElementById("participation").value = ""
+    document.getElementById("finalGrade").innerHTML = ""
     hideMessage();
 }
 
@@ -202,4 +203,5 @@ function checkAnswer(){
 
 function test(){
     console.log("this button is working!")
+
 }
