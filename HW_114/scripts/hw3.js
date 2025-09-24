@@ -100,9 +100,15 @@ function validInput(input){
     }
 }
 
+function ids(number){
+    this.display = `item${number}Display`
+    this.id = `item${number}`
+}
+
 function item(number, quantity){
     this.number = parseFloat(number)
-    this.id = `item${number}Display`
+    this.display = `item${number}Display`
+    this.id = `item${number}`
 
     this.valid = validInput(quantity)
     if(this.valid == true){
@@ -142,7 +148,7 @@ function calculateEarnings(){
         hideMessage()
         let total = 0
         items.forEach(element => {
-            document.getElementById(element.id).value = "$" + element.net.toFixed(2)
+            document.getElementById(element.display).value = "$" + element.net.toFixed(2)
             total = total + element.net
         });
             document.getElementById("total").value = "$" + total.toFixed(2)
@@ -156,11 +162,13 @@ function calculateEarnings(){
 }
 
 function clearQuantities(){
-    console.log("clear")
-    document.getElementById("item1").value = ""
-    document.getElementById("item2").value = ""
-    document.getElementById("item3").value = ""
-    document.getElementById("item4").value = ""
+    items = [new item(1), new item(2), new item(3), new item(4)]
+        items.forEach(element => {
+            document.getElementById(element.id).value = ""
+            document.getElementById(element.display).value = ""
+        });
+        document.getElementById("total").value = ""
+        document.getElementById("earnings").value = ""
     hideMessage();
 }
 
@@ -170,38 +178,51 @@ function product(){
     this.num1 = Math.floor(Math.random()*10)
     this.num2 = Math.floor(Math.random()*10)
     this.answer = this.num1 * this.num2
+    this.solved = false
     this.attempts = 0
     console.log(this.num1, this.num2, this.answer)
 }
 
 function generateNumber(){
     hideMessage()
-    //clear input box when generating new question
+    clearAnswer()
     question = new product()
     document.getElementById("num1").innerHTML = question.num1
     document.getElementById("num2").innerHTML = question.num2
 }
 
 //TODO: replayability
-
+let solved = 0
 function checkAnswer(){
     answer = document.getElementById("answer").value
     if(answer == "" || Number.isNaN(answer)){
-            console.log("numbers only!")
+            showMessage("The answer has to be a number!")
     }
     else{
         if(answer == question.answer){
-            showMessage("Correct! Good Job.")
+            showMessage(`Correct! Good Job.`)
+            if(!question.solved){
+                solved++
+                question.solved = true
+                document.getElementById("score").innerHTML = "Problems Solved: " + solved
+
+            }
+            console.log(solved)
         }
         else{
             question.attempts++
             showMessage("Incorrect. Try Again!")
+            clearAnswer()
         }
     }
+}
+
+function clearAnswer(){
+        document.getElementById("answer").value = ""
+
 }
 
 
 function test(){
     console.log("this button is working!")
-
 }
