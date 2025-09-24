@@ -4,9 +4,14 @@
   --container-bg:  rgba(255, 250, 250, 1);
   --color-text-main: black;
   --bg-color-accent: rgba(250, 210, 210, .6);
-  --link-color: rgb(0, 177, 171);;
+  --link-color: rgb(0, 177, 171);
   --font-size: 1rem;
-  --padding: 0.2rem;
+
+  --mid: 1rem;
+  --half: 0.5rem;
+  --quarter: 0.25rem;
+  --bigger: 1.5rem;
+  --double: 2.0rem;
 }
 
 a{
@@ -27,12 +32,14 @@ body {
   flex-direction: column;
   align-content: center;
   align-items: center;
+  white-space: pre-line;
+  white-space-collapse: preserve;
 }
 
 main{
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: auto;
   min-width: 400px;
   max-width: 1000px;
   background-color: --container-bg;
@@ -50,6 +57,10 @@ table, th, td {
   text-align: center;
 }
 
+td{
+  min-width: 5rem;
+}
+
 tr{
   height: 2rem;
 }
@@ -60,7 +71,6 @@ tr{
   visibility: hidden;
 }
 
-
 .center{
   display: flex;
   flex-direction: column;
@@ -70,8 +80,6 @@ tr{
 
 .row{
   width: 100%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -91,17 +99,17 @@ tr{
   max-width: 1000px;
   box-sizing: border-box;
   background-color: snow;
-  border-radius: 1rem;
-  margin: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  border-radius: var(--mid);
+  margin: var(--half);
+  padding-left: var(--mid);
+  padding-right: var(--mid);
+  padding-top: var(--half);
+  padding-bottom: var(--half);
 }
 
 .padded{
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: var(--mid);
+  padding-right: var(--mid);
 }
 
 .transparent{
@@ -128,7 +136,7 @@ h1{
 }
 
 h2, h3, h4{
-  margin: 0.2rem;
+  margin: var(--quarter);
 }
 
 h4{
@@ -142,13 +150,30 @@ h3{
 
 p{
   margin: 0.05rem;
-  line-height: 1.5rem;
+  line-height: var(--bigger);
 }
 
-input{
+p.center{
+  text-align: center;
+}
+
+
+
+input, label{
   width: 50%;
   max-width: 30rem;
   min-width: 1rem;
+  padding-left: var(--quarter);
+}
+
+label{
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+label.normal{
+  font-size: 1rem;
+  font-style: normal;
 }
 
 input:focus{
@@ -162,7 +187,7 @@ textarea{
   text-wrap: wrap;
 }
 
-.currency{
+.displayNumber{
   width: 100%;
   height: 2.5rem;
   align-content: center;
@@ -170,9 +195,10 @@ textarea{
 }
 
 .math{
-  width: 100%;
-  height: 100%;
+  height: 2.5rem;
   text-align: center;
+  padding: var(--quarter);
+  line-height: 75%;
 }
 
 input, textarea{
@@ -183,15 +209,16 @@ input, textarea{
   border-color: rgba(250, 210, 210, .6);
   color: var(--color-text-main);
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  margin: var(--half);
+  padding: var(--half);
+  border-radius: var(--half);
+  min-width: 5rem;
 }
 
 button{
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border-radius: 0.5rem;
+  padding: var(--half);
+  margin: var(--half);
+  border-radius: var(--half);
   border-style: solid;
   border-width: 0.1rem;
   border-color: rgba(250, 210, 210, .6);
