@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      this is a comment in HTML 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Casey Hull's submission for Homework 3 in CSM CIS 114, a class on JavaScript and Ajax">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ajax">
+    <meta name="author" content="Casey Hull">
+    
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/f0308f51-6e6b-457f-ad70-5b683806b4a1/beeTiny.png?v=1706572074380">
+    <title>Homework 3</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../scripts/hw3.js" ></script>
+
+      <!--
+
+      <script src="/script.js" defer></script>
+      
+      -->
+  </head>
+  <!-- closing head -->
+
+  <body>
+    <header class="container center">
+        <h1 class="mainTitle">Hello World!</h1>
+        <a href = "../index.html"><h2>Main Directory</h2></a>
+    </header>
+
+    <main class="container center">
+            <h2 class="title">Homework 3B</h2>
+            <h4>Part 2</h4>
+            
+            <table>
+              <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity Sold</th>
+              <th>Earnings</th>
+              </tr>
+
+              <tr>
+                <td><label for="item1" class="normal">Item 1</label></td>
+                <td>$20.99</td>
+                <td><div class="row right"><input id="item1" class="displayNumber" type="number" placeholder="Enter a number"></div></td>
+                <td><div class="row right"><textarea id="item1Display" class="displayNumber" disabled></textarea></div></td>
+              </tr>
+              
+              <tr>
+                <td><label for="item2" class="normal">Item 2</label></td>
+                <td>$12.75</td>
+                <td><div class="row right"><input id="item2" class="displayNumber" type="number" placeholder="Enter a number"></div></td>
+                <td><div class="row right"><textarea id="item2Display" class="displayNumber" disabled></textarea></div></td>
+
+              </tr>
+
+              <tr>
+                <td><label for="item3" class="normal">Item 3</label></td>
+                <td>$9.95</td>
+                <td><div class="row right"><input id="item3" class="displayNumber" type="number" placeholder="Enter a number"></div></td>
+                <td><div class="row right"><textarea id="item3Display" class="displayNumber" disabled></textarea></div></td>
+              </tr>
+
+              <tr>
+                <td><label for="item4" class="normal">Item 4</label></td>
+                <td>$35.89</td>
+                <td><div class="row right"><input id="item4" class="displayNumber" type="number" placeholder="Enter a number"></div></td>
+                <td><div class="row right"><textarea id="item4Display" class="displayNumber" disabled></textarea></div></td>
+              </tr>
+              
+              <tr>
+                <td colspan="3"><label for="total" class="normal">Total Sold</label></td>
+                <td><div class="row right"><textarea id="total" class="displayNumber" disabled></textarea></div></td>
+              </tr>
+
+              <tr>
+                <td colspan="3"><label for="earnings" class="normal">Total Earnings</label></td>
+                <td><div class="row right"><textarea id="earnings" class="displayNumber" disabled></textarea></div></td>
+              </tr>
+
+            </table>
+
+        <p class="center" id="display"></p>
+
+        <div class="row">
+            <button onclick="calculateEarnings()">Submit</button>
+            <button onclick="clearQuantities()">Clear</button>
+        </div>
+
+        <a href = "../hw3.html"><h4>Return to Homework 3</h4></a>
+    </main>
+
+    <footer class="container center transparent">
+          <p>Casey Hull</p>
+          <p>2025</p>
+          <a href = "../index.html">Main Directory</a>
+      </footer>
+  </body>
+  <!-- closing body -->
+</html>
+<!-- closing HTML file. that's all for now, folks! -->
