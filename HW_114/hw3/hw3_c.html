@@ -17,6 +17,7 @@
     <title>Homework 3</title>
 
     <link rel="stylesheet" href="../style.css">
+    <script src="../scripts/hw3.js" ></script>
       <!--
     <script src="../scripts/hw3.js" ></script>
 
@@ -34,8 +35,24 @@
 
     <main class="container center">
             <h2 class="title">Homework 3C</h2>
+            <h4>Extra Credit</h4>
+            <h3>Simple Multiplication Practice</h3>
+            <br>
+             <p>What is <span id="num1">X</span> times <span id="num2">Y</span>?</p> 
 
+             <label for="answer">Your Answer:</label>
+            <input id="answer" class="math" type="number" placeholder="Enter a number">
+
+        <p class="center" id="display"></p>
+
+        <div class="row">
+            <button onclick="generateNumber()">Generate Problem</button>
+            <button onclick="checkAnswer()">Check Answer</button>
+        </div>
+        <p class="center" id="score"></p>
         <a href = "../hw3.html"><h4>Return to Homework 3</h4></a>
+
+
     </main>
 
     <footer class="container center transparent">
