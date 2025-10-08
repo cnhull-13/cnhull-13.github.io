@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      this is a comment in HTML 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Casey Hull's submission for Homework 4 in CSM CIS 114, a class on JavaScript and Ajax">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ajax">
+    <meta name="author" content="Casey Hull">
+    
+    <link
+      rel="icon"
+      href="./images/beeTiny.png">
+    <title>Homework 4</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="../scripts/hw4.js" defer></script>
+      <!--
+
+      <script src="/script.js" defer></script>
+      
+      -->
+  </head>
+  <!-- closing head -->
+
+  <body>
+        <a href="../hw4.html" class="btn"><button class="floating" id="back"><img src="../images/leftArrow.png" class="btnImg" alt="Back Arrow"></button></a>
+
+    <header class="container center">
+        <h1 class="mainTitle">Hello World!</h1>
+        <a href = "../index.html"><h2>Main Directory</h2></a>
+    </header>
+
+    <main class="container center">
+        <h2 class="title">Homework 4A</h2>
+        <h4>Part 1</h4>
+        <h3>Sums and Products</h3>
+        <p class = "center">This page has a tool that lets you add or multiply every nth number in a set range.</p>
+        <p class = "center">For example:</p>
+
+        <p class="center" id="exampleDisplay"></p>
+        <br>
+        <p class = "center">Try your own combination of numbers!</p>
+        <table>
+            <tr>
+                <td><label for="lower" class="normal">Lower Number</label></td>
+                <td><div class="row right"><input id="lower" class="displayNumber" type="number" placeholder="Enter a number"></div></td>
+            </tr>
+            <tr>
+                <td><label for="upper" class="normal">Higher Number</label></td>
+                <td><div class="row right"><input id="upper" class="displayNumber" type="number" placeholder="Enter a number"></div></td>
+
+            </tr>
+            <tr>
+                <td><label for="increment" class="normal">Increments of</label></td>
+                <td><div class="row right"><input id="increment" class="displayNumber" type="number" placeholder="Enter a number"></div></td>
+            </tr>
+        </table>
+
+        <p class="center" id="display"></p>
+
+        <div class="row">
+            <button onclick="fetchInput()">Submit Numbers</button>
+        </div>
+
+        <a href = "../hw4.html"><h4>Return to Homework 4</h4></a>
+    </main>
+
+    <footer class="container center transparent">
+          <p>Casey Hull</p>
+          <p>2025</p>
+          <a href = "../index.html">Main Directory</a>
+      </footer>
+  </body>
+  <!-- closing body -->
+</html>
+<!-- closing HTML file. that's all for now, folks! -->
