@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      this is a comment in HTML 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Casey Hull's submission for Homework 5 in CSM CIS 114, a class on JavaScript and Ajax">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ajax">
+    <meta name="author" content="Casey Hull">
+    
+    <link
+      rel="icon"
+      href="../images/beeTiny.png">
+    <title>Homework 5</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="../scripts/hw5_b.js" defer></script>
+      <!--
+
+      <script src="/script.js" defer></script>
+      
+      -->
+  </head>
+  <!-- closing head -->
+
+  <body>
+    <a href="../hw5.html" class="floating"><img src="../images/leftArrow.png" class="btnImg" alt="Back Arrow"></a>
+
+    <header class="container center">
+        <h1 class="mainTitle">Hello World!</h1>
+        <a href = "../index.html"><h2>Main Directory</h2></a>
+    </header>
+
+    <main class="container center">
+        <h2 class="title">Homework 5B</h2>
+        <h4>Part 2</h4>
+        <h3>In progress</h3>
+
+        <div>
+For Part 2:
+
+The web page for part 2 and the script will be based on the table you see below that shows data about several of our states from the July/2024 census!
+
+    You will create a web page for part 2 with:
+        -a heading
+        -a hyperlink so the user can go back to the main page of Homework 5
+        -a form with an input text box - the user will use that input box to type:
+            -either the full name of the state or
+            -the two-letter abbreviation of the state
+<label for="state">Enter the full or abbreviated name:</label>
+<input id="state" placeholder="e.g. California or CA">
+        -a button to submit the data
+        -a button to clear the form
+        <div class="row">
+            <button onclick="getInput()">Submit</button>
+            <button onclick="clearInput()">Clear</button>
+        </div>        
+        If the state does not exist, write a message in the output area saying something as "Sorry, we do not have information about this state! We only have information about....." - remember to be clear in your error message to guide the user!
+        If the state exists, you should present in the output/result area the information from the state required - think about presenting the information in a nice readable way!
+
+More Tips:
+
+    Solving this problem involves a two-dimensional array.
+    Make sure you validate the input for a correct state abbreviation or state name. If the input is invalid then display an error message. 
+
+For example, suppose the user typed "caliFORNIA" (a mix or lower and uppercase), your script will consider this state valid, would find the state in your list and would present an output message looking something as:
+Thanks for your inquiry, here is the information you requested:
+State abbr = CA
+State Name = California
+Capital = Sacramento
+Population = 39,431,263
+
+Census Data
+<table>
+    <th>State Abbr</th>
+    <th>State Name</th>
+    <th>Capital</th>
+    <th>Population</th>
+    <tr>
+        <td>AL</td>
+        <td>Alabama</td>
+        <td>Montgomery</td>
+        <td>5,157,699</td>
+    </tr>
+    <tr>
+        <td>AK</td>
+        <td>Alaska</td>
+        <td>Juneau</td>
+        <td>740,133</td>
+    </tr>
+    <tr>
+        <td>AZ</td>
+        <td>Arizona</td>
+        <td>Phoenix</td>
+        <td>7,582,384</td>
+    </tr>
+    <tr>
+        <td>CA</td>
+        <td>California</td>
+        <td>Sacramento</td>
+        <td>39,431,263</td>
+    </tr>
+    <tr>
+        <td>CO</td>
+        <td>Colorado</td>
+        <td>Denver</td>
+        <td>5,957,493</td>
+    </tr></table>
+
+
+
+        </div>
+
+        <p class="center" id="display"></p>
+
+        <div class="row">
+
+        </div>
+
+        <a href = "../hw5.html"><h4>Return to Homework 5</h4></a>
+    </main>
+
+    <footer class="container center transparent">
+          <p>Casey Hull</p>
+          <p>2025</p>
+          <a href = "../index.html">Main Directory</a>
+      </footer>
+  </body>
+  <!-- closing body -->
+</html>
+<!-- closing HTML file. that's all for now, folks! -->

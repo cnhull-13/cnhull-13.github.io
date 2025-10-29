@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      this is a comment in HTML 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Casey Hull's submission for Homework 5 in CSM CIS 114, a class on JavaScript and Ajax">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ajax">
+    <meta name="author" content="Casey Hull">
+    
+    <link
+      rel="icon"
+      href="../images/beeTiny.png">
+    <title>Homework 5</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="../scripts/hw5.js" defer></script>
+      <!--
+
+      <script src="/script.js" defer></script>
+      
+      -->
+  </head>
+  <!-- closing head -->
+
+  <body>
+    <a href="../hw5.html" class="floating"><img src="../images/leftArrow.png" class="btnImg" alt="Back Arrow"></a>
+
+    <header class="container center">
+        <h1 class="mainTitle">Hello World!</h1>
+        <a href = "../index.html"><h2>Main Directory</h2></a>
+    </header>
+
+    <main class="container center">
+        <h2 class="title">Homework 5A</h2>
+        <h4>Part 1</h4>
+        <h3>Sums and Products</h3>
+
+        <table>
+            <tr>
+                <td><label for="first" class="normal">What is your first name?</label></td>
+                <td><div class="row right"><input id="first" class="textEntry" placeholder="First Name"></div></td>
+            </tr>
+            <tr>
+                <td><label for="last" class="normal">What is your last name?</label></td>
+                <td><div class="row right"><input id="last" class="textEntry" placeholder="Last Name"></div></td>
+
+            </tr>
+            <tr>
+                <td>What is your age?</td>
+                <td>
+                    <div class="radio left"><input class="otherInput" type="radio" id="ageGroup1" name="Age" value="under 21"><label for="ageGroup1">Under 21</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="ageGroup2" name="Age" value="between 21 and 50"><label for="ageGroup2">21-50</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="ageGroup3" name="Age" value="older than 50"><label for="ageGroup3">50+</label></div>
+            </tr>
+            <tr>
+                <td>Which browser are you using?</td>
+                <td>
+                    <div class="radio left"><input class="otherInput" type="radio" id="chrome" name="Browser" value="Google Chrome"><label for="chrome">Google Chrome</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="firefox" name="Browser" value="Mozilla Firefox"><label for="firefox">Mozilla Firefox</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="safari" name="Browser" value="Safari"><label for="safari">Safari</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="opera" name="Browser" value="Opera"><label for="opera">Opera</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="edge" name="Browser" value="Microsoft Edge"><label for="edge">Microsoft Edge</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="duck" name="Browser" value="DuckDuckGo"><label for="duck">DuckDuckGo</label></div>
+                    <div class="radio left"><input class="otherInput" type="radio" id="other" name="Browser" value="a different browser that isn't listed"><label for="other">Other</label></div>
+            
+            </tr>
+
+
+            <tr>
+                <td>Which browser are you using?</td>
+                <td>
+                    <div class="radio left"><input class="otherInput" type="checkbox" id="chrome_used" name="Used" value="Google Chrome"><label for="chrome_used">Google Chrome</label></div>
+                    <div class="radio left"><input class="otherInput" type="checkbox" id="firefox_used" name="Used" value="Mozilla Firefox"><label for="firefox_used">Mozilla Firefox</label></div>
+                    <div class="radio left"><input class="otherInput" type="checkbox" id="safari_used" name="Used" value="Safari"><label for="safari_used">Safari</label></div>
+                    <div class="radio left"><input class="otherInput" type="checkbox" id="opera_used" name="Used" value="Opera"><label for="opera_used">Opera</label></div>
+                    <div class="radio left"><input class="otherInput" type="checkbox" id="edge_used" name="Used" value="Microsoft Edge"><label for="edge_used">Microsoft Edge</label></div>
+                    <div class="radio left"><input class="otherInput" type="checkbox" id="duck_used" name="Used" value="DuckDuckGo"><label for="duck_used">DuckDuckGo</label></div>
+                    <div class="radio left"><input class="otherInput" type="checkbox" id="other_used" name="Used" value="at least one other browser"><label for="other_used">Other</label></div>
+            
+            </tr>
+
+            <tr>
+                <td>What are your favorite types of movies?</td>
+                <td>
+                <select name="Genre" id="genres">
+                    <option value="select">Select a genre</option>
+                    <option value="action or thriller films">Action/Thriller</option>
+                    <option value="comedies">Comedy</option>
+                    <option value="dramas">Drama</option>
+                    <option value="science fiction or fantasy films">Science Fiction/Fantasy</option>
+                    <option value="horror films">Horror</option>
+                    <option value="documentaries">Documentary</option>
+                </select>
+                </td>
+
+            </tr>
+            
+        </table>
+        </table>
+
+        <p class="center" id="display"></p>
+
+        <div class="row">
+            <button onclick="getInput()">Submit</button>
+            <button onclick="clearInput()">Clear</button>
+        </div>
+
+        <a href = "../hw5.html"><h4>Return to Homework 5</h4></a>
+    </main>
+
+    <footer class="container center transparent">
+          <p>Casey Hull</p>
+          <p>2025</p>
+          <a href = "../index.html">Main Directory</a>
+      </footer>
+  </body>
+  <!-- closing body -->
+</html>
+<!-- closing HTML file. that's all for now, folks! -->

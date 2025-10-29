@@ -61,35 +61,13 @@ table, th, td {
 
 td{
   min-width: 5rem;
+  white-space-collapse: collapse;
 }
 
 tr{
   height: 2rem;
 }
 
-button{
-  cursor: pointer;
-}
-
-.floating{
-  background-color: var(--bg-color-accent);
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 2rem;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-}
-
-.btnImg{
-  box-sizing: border-box;
-  height: 75%;
-  width: 75%;
-}
 
 .visible{
   visibility: hidden;
@@ -190,9 +168,26 @@ input, label{
   padding-left: var(--quarter);
 }
 
+select{
+  min-width: 8rem;
+  text-align: center;
+  outline-color: rgba(250, 210, 210, 1);
+}
+
+.otherInput{
+  height: auto;
+  width: auto;
+}
+
+.radio{
+  margin-left: 0.5rem;
+  padding: 0;
+  text-align: left;
+}
+
 label{
-  font-size: 0.75rem;
-  font-style: italic;
+  font-size: 1rem;
+  font-style: normal;
 }
 
 label.normal{
@@ -209,6 +204,12 @@ input:focus{
 
 textarea{
   text-wrap: wrap;
+}
+
+.textEntry{
+  width: 100%;
+  height: 2.5rem;
+  align-content: center;
 }
 
 .displayNumber{
@@ -236,7 +237,6 @@ input, textarea{
   margin: var(--half);
   padding: var(--half);
   border-radius: var(--half);
-  min-width: 5rem;
 }
 
 button{
@@ -270,5 +270,52 @@ button{
 .monospace{
   font-family: 'Courier New', Courier, monospace;
   line-height: 125%;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+
+
+.btnImg{
+  box-sizing: border-box;
+  display: block;
+  padding: var(--half);
+  margin: var(--half);
+  padding: auto;
+  height: 75%;
+  width: 75%;
+}
+
+.floating{
+  position:fixed;
+  background-color: var(--bg-color-accent);
+  top: 1.5rem;
+  left: 1rem;
+  height: 3rem;
+  width: 3rem;
+	border-radius:2rem;
+	box-shadow: 2px 2px 3px #999;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.float{
+  position:fixed;
+  background-color: var(--bg-color-accent);
+  top: 1.5rem;
+  left: 1rem;
+  height: 3rem;
+  width: 3rem;
+	border-radius:2rem;
+	box-shadow: 2px 2px 3px #999;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
 }
 
