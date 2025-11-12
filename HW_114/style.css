@@ -16,16 +16,24 @@
   --double: 2.0rem;
 }
 
+/* a link */
 a{
   text-decoration: none;
   color: var(--link-color)
 }
+
+br{
+  line-height: 0.5;
+}
+
+/* html */
 html{
   height:90%;
   font-family: Helvetica, sans-serif;
 
 }
 
+/* body */
 body {
   box-sizing: border-box;
   height: 100%;
@@ -35,9 +43,14 @@ body {
   align-content: center;
   align-items: center;
   white-space: pre-line;
+}
+
+
+.preserveWhitespace{
   white-space-collapse: preserve;
 }
 
+/* main */
 main{
   box-sizing: border-box;
   width: 100%;
@@ -50,6 +63,23 @@ main{
   margin: 1rem;
 }
 
+main.popup{
+  min-width: 200px;
+  max-width: 1000px;
+  box-sizing: border-box;
+  background-color: snow;
+  border-radius: var(--mid);
+  margin-top: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+}
+
+button.popup{
+  margin-top: 0
+}
+
+/* table th td */
 table, th, td {
   box-sizing: border-box;
   border: 1px solid var(--bg-color-accent);
@@ -59,11 +89,13 @@ table, th, td {
   text-align: center;
 }
 
+/* table td */
 td{
   min-width: 5rem;
   white-space-collapse: collapse;
 }
 
+/* table tr */
 tr{
   height: 2rem;
 }
@@ -78,6 +110,7 @@ tr{
   flex-direction: column;
   align-content: center;
   align-items: center;
+  gap: 0.25rem;
 }
 
 .row{
@@ -90,6 +123,7 @@ tr{
   text-align: center;
   border: none;
 }
+
 
 .right{
   justify-content:end;
@@ -126,41 +160,49 @@ tr{
   font-style: italic;
 }
 
-
+/* header */
 h1,h2,h3{
   margin: 0rem;
 }
 
+/* h header */
 h1{
   font-family: Helvetica, sans-serif;
   font-weight: bold;
   font-size: 56px;
 }
-
+/* h header */
 h2, h3, h4{
   margin: var(--quarter);
 }
-
+/* h header */
 h4{
   font-weight: lighter;
   font-style: italic;
 }
-
+/* h header */
 h3{
   font-weight: lighter;
 }
 
+/* p paragraph */
 p{
   margin: 0.05rem;
   line-height: var(--bigger);
 }
 
+/* p paragraph */
 p.center{
   text-align: center;
 }
 
+p.restrictWidth{
+  width: 75%;
+  max-width: 500px;
+}
 
 
+/* input label */
 input, label{
   width: 50%;
   max-width: 30rem;
@@ -168,6 +210,7 @@ input, label{
   padding-left: var(--quarter);
 }
 
+/* select */
 select{
   min-width: 8rem;
   text-align: center;
@@ -185,16 +228,19 @@ select{
   text-align: left;
 }
 
+/* label */
 label{
   font-size: 1rem;
   font-style: normal;
 }
 
+/* label */
 label.normal{
   font-size: 1rem;
   font-style: normal;
 }
 
+/* input */
 input:focus{
    outline: none;
    outline-color: rgba(250, 210, 210, 1);
@@ -202,6 +248,7 @@ input:focus{
     border-color: rgba(250, 210, 210, 1);
 }
 
+/* textarea */
 textarea{
   text-wrap: wrap;
 }
@@ -226,6 +273,7 @@ textarea{
   line-height: 75%;
 }
 
+/* input textarea */
 input, textarea{
   box-sizing: border-box;
   resize: none;
@@ -239,6 +287,20 @@ input, textarea{
   border-radius: var(--half);
 }
 
+/* textarea */
+textarea.textEditor{
+  width: 75%;
+  max-width: 750px;
+  min-height: 8rem;
+  resize: vertical;
+}
+
+textarea:focus{
+  outline-color: rgba(250, 210, 210, 1);
+  box-shadow: 0 0 0.5rem  rgba(250, 210, 210, 1);
+}
+
+/* button */
 button{
   padding: var(--half);
   margin: var(--half);
@@ -272,7 +334,7 @@ button{
   line-height: 125%;
 }
 
-
+/* button */
 button{
   cursor: pointer;
 }
