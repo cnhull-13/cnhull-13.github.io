@@ -60,8 +60,8 @@ function getData(){
 }
 
 function clearData(){
-    document.getElementById("textEntry").innerHTML = ""
-    document.getElementById("letter").innerHTML = ""
+    document.getElementById("textEntry").value = ""
+    document.getElementById("letter").value = ""
 
 }
 
