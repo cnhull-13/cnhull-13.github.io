@@ -56,13 +56,18 @@ function getData(){
     let text = document.getElementById("textEntry").value
     let char = document.getElementById("letter").value
     console.log(`text: ${text}, char: ${char}`)
-    countLetters(text, char)
+    if(text == "" || char == ""){
+        showMessage("Please enter a character and some text to search for that character!")
+    }
+    else{
+        countLetters(text, char)
+
+    }
 }
 
 function clearData(){
     document.getElementById("textEntry").value = ""
     document.getElementById("letter").value = ""
-
 }
 
 function closeWindow(){
