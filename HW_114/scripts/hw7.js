@@ -61,7 +61,7 @@ function updatePage(){
         let cookies = document.cookie
         console.log(`I've got some cookies...maybe. Here they are: ${document.cookie}`)
         if(cookies !== null){
-            showMessage("Welcome back!")
+            //showMessage("Welcome back!")
             parseCookies()
         }
 }
@@ -85,5 +85,5 @@ function parseCookies(){
     }
         document.getElementById("cookieJar").innerHTML = `User: ${username}\nWelcome back, ${name}!\nCan I interest you in a cookie?`
 
-    showMessage(`User: ${username}\nWelcome back, ${name}!`)
+    //showMessage(`User: ${username}\nWelcome back, ${name}!`)
 }
