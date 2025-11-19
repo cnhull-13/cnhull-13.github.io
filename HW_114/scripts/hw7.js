@@ -54,20 +54,23 @@ function save(){
     document.cookie = cookie2
 
     console.log(`Here's your cookie jar: ${document.cookie}`)
+    location.reload()
+
 }
 
 function updatePage(){
         console.log(`I've got some cookies...maybe. Here they are: ${document.cookie}`)
         let cookies = document.cookie
-        console.log(`I've got some cookies...maybe. Here they are: ${document.cookie}`)
-        if(cookies !== null){
-            //showMessage("Welcome back!")
+        console.log(`I've got some cookies...maybe. Here they are: [${document.cookie}]`)
+        if(cookies !== ""){
+            showMessage("Welcome back!")
             parseCookies()
         }
 }
 
 function parseCookies(){
     let cookies = document.cookie
+    console.log(cookies)
     let name = ""
     let username = ""
     let arr = cookies.split(`;`)
@@ -84,6 +87,5 @@ function parseCookies(){
         }
     }
         document.getElementById("cookieJar").innerHTML = `User: ${username}\nWelcome back, ${name}!\nCan I interest you in a cookie?`
-
     //showMessage(`User: ${username}\nWelcome back, ${name}!`)
 }
