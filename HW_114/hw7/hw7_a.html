@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      this is a comment in HTML 
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Casey Hull's submission for Homework 7 in CSM CIS 114, a class on JavaScript and Ajax">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Ajax">
+    <meta name="author" content="Casey Hull">
+    
+    <link
+      rel="icon"
+      href="../images/beeTiny.png">
+    <title>Homework 6</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="../scripts/hw7.js" defer></script>
+      <!--
+
+      <script src="/script.js" defer></script>
+      
+      -->
+  </head>
+  <!-- closing head -->
+
+  <body>
+    <a href="../hw7.html" class="floating"><img src="../images/leftArrow.png" class="btnImg" alt="Back Arrow"></a>
+
+    <header class="container center">
+        <h1 class="mainTitle">Hello World!</h1>
+        <a href = "../index.html"><h2>Main Directory</h2></a>
+    </header>
+
+    <main class="container center">
+        <h2 class="title">Homework 7A</h2>
+        <h4>Part 1</h4>
+        <h3>User Formatted Text</h3>
+
+        <div class="center accordionTest">
+            <input  class="invisible" type="checkbox" id="sec1">
+            <label class="dropdown" for="sec1">Formatting Options</label>
+            <div class="accordion rowMenu" id="section1">
+                <div class="removeWhitespace">
+                    <p style="padding:0; margin:0;">Background Color</p>
+                    <div class="radio left" ><input checked="checked" onclick="backgroundColor(`snow`)" class="otherInput" type="radio" id="color1" name="backgroundColor" value="snow"><label for="color1">snow</label></div>
+                    <div class="radio left" ><input onclick="backgroundColor(`rosybrown`)" class="otherInput" type="radio" id="color2" name="backgroundColor" value="rosybrown"><label for="color2">rosybrown</label></div>
+                    <div class="radio left" ><input onclick="backgroundColor(`linen`)" class="otherInput" type="radio" id="color3" name="backgroundColor" value="linen"><label for="color3">linen</label></div>
+                </div>
+
+                <div class="removeWhitespace">
+                    <p style="padding:0; margin:0;">Font Size</p>
+                    <div class="radio left" ><input onclick="fontSize(12)" class="otherInput" type="radio" id="size1" name="fontSize" value="12"><label for="size1">12</label></div>
+                    <div class="radio left" ><input checked="checked" onclick="fontSize(16)" class="otherInput" type="radio" id="size2" name="fontSize" value="16"><label for="size2">16</label></div>
+                    <div class="radio left" ><input onclick="fontSize(20)" class="otherInput" type="radio" id="size3" name="fontSize" value="20"><label for="size3">20</label></div>
+                </div>
+
+                <div class="removeWhitespace">
+                    <p style="padding:0; margin:0;">Line Spacing</p>
+                    <div class="radio left" ><input onclick="lineHeight(1)" class="otherInput" type="radio" id="height1" name="lineHeight" value="1"><label for="height1">1x</label></div>
+                    <div class="radio left" ><input checked="checked" onclick="lineHeight(1.5)" class="otherInput" type="radio" id="height2" name="lineHeight" value="1.5"><label for="height2">1.5x</label></div>
+                    <div class="radio left" ><input onclick="lineHeight(2)" class="otherInput" type="radio" id="height3" name="lineHeight" value="2"><label for="height3">2x</label></div>
+                    <div class="radio left" ><input onclick="lineHeight(2.5)" class="otherInput" type="radio" id="height4" name="lineHeight" value="2.5"><label for="height4">2.5x</label></div>
+                </div>
+
+                <div class="removeWhitespace">
+                    <p>Other Text Options</p>
+                    <div class="radio left" ><input onclick="bold()" class="otherInput" type="checkbox" id="bold" name="Additional" value="Bold"><label for="bold">Bold</label></div>
+                    <div class="radio left"><input onclick="underline()" class="otherInput" type="checkbox" id="underline" name="Additional" value="Underline"><label for="underline">Underline</label></div>
+                    <div class="radio left"><input onclick="italic()" class="otherInput" type="checkbox" id="italic" name="Additional" value="italic"><label for="italic">Italic</label></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div id="styleText" class="reader">
+            <h4>VIII.</h4><h4>THE ADVENTURE OF THE SPECKLED BAND</h4>
+<p>On glancing over my notes of the seventy odd cases in which I have during the last eight years studied the methods of my friend Sherlock Holmes, I find many tragic, some comic, a large number merely strange, but none commonplace; for, working as he did rather for the love of his art than for the acquirement of wealth, he refused to associate himself with any investigation which did not tend towards the unusual, and even the fantastic. Of all these varied cases, however, I cannot recall any which presented more singular features than that which was associated with the well-known Surrey family of the Roylotts of Stoke Moran. The events in question occurred in the early days of my association with Holmes, when we were sharing rooms as bachelors in Baker Street. It is possible that I might have placed them upon record before, but a promise of secrecy was made at the time, from which I have only been freed during the last month by the untimely death of the lady to whom the pledge was given. It is perhaps as well that the facts should now come to light, for I have reasons to know that there are widespread rumours as to the death of Dr. Grimesby Roylott which tend to make the matter even more terrible than the truth.
+
+It was early in April in the year '83 that I woke one morning to find Sherlock Holmes standing, fully dressed, by the side of my bed. He was a late riser, as a rule, and as the clock on the mantelpiece showed me that it was only a quarter-past seven, I blinked up at him in some surprise, and perhaps just a little resentment, for I was myself regular in my habits.
+
+"Very sorry to knock you up, Watson," said he, "but it's the common lot this morning. Mrs. Hudson has been knocked up, she retorted upon me, and I on you."
+
+"What is it, then—a fire?"
+
+"No; a client. It seems that a young lady has arrived in a considerable state of excitement, who insists upon seeing me. She is waiting now in the sitting-room. Now, when young ladies wander about the metropolis at this hour of the morning, and knock sleepy people up out of their beds, I presume that it is something very pressing which they have to communicate. Should it prove to be an interesting case, you would, I am sure, wish to follow it from the outset. I thought, at any rate, that I should call you and give you the chance."
+
+"My dear fellow, I would not miss it for anything."
+
+I had no keener pleasure than in following Holmes in his professional investigations, and in admiring the rapid deductions, as swift as intuitions, and yet always founded on a logical basis with which he unravelled the problems which were submitted to him. I rapidly threw on my clothes and was ready in a few minutes to accompany my friend down to the sitting-room. A lady dressed in black and heavily veiled, who had been sitting in the window, rose as we entered. 
+"Very sorry to knock you up, Watson," said he, "but it's the common lot this morning. Mrs. Hudson has been knocked up, she retorted upon me, and I on you."
+
+"What is it, then—a fire?"
+
+"No; a client. It seems that a young lady has arrived in a considerable state of excitement, who insists upon seeing me. She is waiting now in the sitting-room. Now, when young ladies wander about the metropolis at this hour of the morning, and knock sleepy people up out of their beds, I presume that it is something very pressing which they have to communicate. Should it prove to be an interesting case, you would, I am sure, wish to follow it from the outset. I thought, at any rate, that I should call you and give you the chance."
+
+"My dear fellow, I would not miss it for anything."
+
+I had no keener pleasure than in following Holmes in his professional investigations, and in admiring the rapid deductions, as swift as intuitions, and yet always founded on a logical basis with which he unravelled the problems which were submitted to him. I rapidly threw on my clothes and was ready in a few minutes to accompany my friend down to the sitting-room. A lady dressed in black and heavily veiled, who had been sitting in the window, rose as we entered. </p></div>
+
+        <a href = "../hw7.html"><h4>Return to Homework 7</h4></a>
+    </main>
+
+    <footer class="container center transparent">
+          <p>Casey Hull</p>
+          <p>2025</p>
+          <a href = "../index.html">Main Directory</a>
+      </footer>
+  </body>
+  <!-- closing body -->
+   <script>
+   
+        var input = document.getElementsByTagName('input');
+        for (var i = input.length-1; i>=0; i--) {
+            if ('radio'===input[i].type || 'checkbox'===input[i].type) input[i].checked = false;
+        }
+    </script>
+</html>
+<!-- closing HTML file. that's all for now, folks! -->
+
+<!-- replace font size radio with select dropdown -->

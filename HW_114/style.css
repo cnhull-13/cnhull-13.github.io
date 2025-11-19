@@ -44,7 +44,9 @@ body {
   align-items: center;
   white-space: pre-line;
 }
-
+.removeWhitespace{
+  white-space-collapse: collapse;
+}
 
 .preserveWhitespace{
   white-space-collapse: preserve;
@@ -75,9 +77,111 @@ main.popup{
   padding-top: 1rem;
 }
 
+.accordion{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  width: 100%;
+}
+
+.accordionTest{
+  width: 100%;
+}
+
+.accordionTest input.invisible{
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  height: 0;
+}
+
+.accordionTest label.dropdown{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  max-width: 100%;
+  text-align: center;
+  background-color: var(--bg-color-accent);
+}
+
+.accordionTest label.dropdown:hover{
+  cursor: pointer;
+  background-color: var(--bg-color-accent-trans);
+}
+
+.accordionTest input:checked ~ label.dropdown {
+  background-color: var(--bg-color-accent-trans);
+}
+
+.accordionTest input:checked ~ .accordion {
+  
+  max-height: 100rem;
+}
+
+.reader{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;  
+  width: 100%;
+  padding:1rem;
+  border-radius: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  font-size: normal;
+  line-height: 1.5rem;
+  text-indent: 2rem;
+}
+
+.reader h4{
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+
+.reader p{
+  width: 90%;
+  margin: auto;
+  line-height: inherit;
+}
+
+.reader2 p::first-letter{
+  font-weight: bold;
+  font-style: oblique;
+  font-size:larger;
+}
+
 button.popup{
   margin-top: 0
 }
+
+.rowMenu{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  border: none;
+}
+
+
+.rowMenu2{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+
+
 
 /* table th td */
 table, th, td {
