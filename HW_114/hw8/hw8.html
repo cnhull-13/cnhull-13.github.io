@@ -15,11 +15,12 @@
     <link
       rel="icon"
       href="../images/beeTiny.png">
-    <title>Homework 6</title>
+    <title>Homework 8</title>
 
     <link rel="stylesheet" href="../style.css">
 
     <script src="../scripts/hw8.js" defer></script>
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
       <!--
 
       <script src="/script.js" defer></script>
@@ -39,9 +40,32 @@ th,td {
 </style>
 <body>
 
+      <script>
+      const P = new Pokedex.Pokedex({ cacheImages: true });
+    </script>
+
+      <a href="../index.html" class="floating"><img src="../images/leftArrow.png" class="btnImg" alt="Back Arrow"></a>
+    
+      <main class="container center">
+        <h2 class="title">Homework 8</h2>
+        <h3>AJAX Application</h3>
+
+
+        
+
+
 <button type="button" onclick="loadDoc()">Get CD collection</button>
-<br><br>
 <table id="demo"></table>
+
+        <p class="center" id="display"></p>
+
+
+
+
+        <a href = "../index.html"><h4>Return to Main Page</h4></a>
+    </main>
+
+<br><br>
 
 
 
