@@ -1,3 +1,15 @@
+const Pokedex = require("pokeapi-js-wrapper")
+const P = new Pokedex.Pokedex()
+
+function showMessage(message, location = "display"){
+    document.getElementById(location).innerHTML = message
+}
+
+function hideMessage(location = "display"){
+    document.getElementById(location).innerHTML = ""
+}
+
+
 
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
@@ -21,3 +33,14 @@ function myFunction(xml) {
   document.getElementById("demo").innerHTML = table;
 
 }
+
+
+
+
+function fetchKanto(){
+      fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+      .then(response => response.json()).then(allpokemon => console.log(allpokemon))
+    }
+
+      
+fetchKanto();

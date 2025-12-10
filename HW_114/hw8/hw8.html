@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="../style.css">
 
     <script src="../scripts/hw8.js" defer></script>
-    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
       <!--
 
       <script src="/script.js" defer></script>
@@ -40,27 +39,24 @@ th,td {
 </style>
 <body>
 
-      <script>
-      const P = new Pokedex.Pokedex({ cacheImages: true });
-    </script>
-
       <a href="../index.html" class="floating"><img src="../images/leftArrow.png" class="btnImg" alt="Back Arrow"></a>
     
       <main class="container center">
         <h2 class="title">Homework 8</h2>
         <h3>AJAX Application</h3>
+        <button type="button" onclick="loadDoc()">Get CD collection</button>
+        <table id="demo"></table>
 
+        <h2>Explanation of AJAX</h2>
+        <p>AJAX is simply the combination of JavaScript and XML; simply put, XML stores data, and we use JavaScript to access that data and present it to the user. JavaScript is able to open the XML file, and read the contents. In this case, the JavaScript then constructs additional HTML to be inserted, and then inserts the parsed data at the appropriate elements. </p>
 
+        <h2>REST API</h2>
+        <p><a src="https://pokeapi.co/">Pokeapi</a> offers a robust, read-only API for other sites to access thousands of data entries from the Pokemon series of Video Games. While it was originally started by one person, the project has grown and evolved, and is now maintained by a collective of Pokemon fans.
         
-
-
-<button type="button" onclick="loadDoc()">Get CD collection</button>
-<table id="demo"></table>
-
-        <p class="center" id="display"></p>
-
-
-
+        Pokeapi open access--no authentication required--and completely free for all users, though they do request that data be cached locally, where possible. While rate limiting was previously necessary, they were able to remove those rate limits after migrating all of the data to a static JSON format.
+      
+        Relevant documentation and links to additional resources can be found at the link above.
+      </p>
 
         <a href = "../index.html"><h4>Return to Main Page</h4></a>
     </main>
